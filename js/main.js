@@ -22,6 +22,7 @@ function normalImg(x) {
   x.style.width = "40px";
 }
 
+
 let ubicacionPrincipal = window.pageYOffset;
 window.onscroll = function() {
   let Desplazamiento_Actual = window.pageYOffset;
@@ -33,3 +34,7 @@ window.onscroll = function() {
   }
   ubicacionPrincipal = Desplazamiento_Actual;
 }
+
+menu.addEventListener("click", () => {
+  document.getElementById("header").style.top = "0" ;
+})
