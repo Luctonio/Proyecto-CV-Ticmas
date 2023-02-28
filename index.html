@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Luciano Tognoli</title>
+  <link rel="icon" type="image/x-icon" href=images/favicon.ico> 
+  <link rel="stylesheet" href="css/estilo.css"> 
+</head>
+<body>
+  <noscript>
+    Este sitio necesita Javascript para funcionar correctamente. 
+  </noscript>
+<header class="none-mobile header" id="header">
+  <div class="close" onclick={hideMenu()}>
+    <img src="images/cerrar.png" style="width:20px;height:20px;" />
+  </div>
+    <nav> 
+      <ul>
+        <li><a class="botones" href="#sobre-mi">Sobre mí</a></li> 
+        <li><a class="botones" href="#formacion">Formación</a></li>
+        <li><a class="botones" href="#experiencia">Experiencia</a></li>
+        <li><a class="botones" href="#contacto">Contacto</a></li> 
+      </ul> 
+    </nav>
+</header>
+<main>
+  <section id="sobre-mi">
+    <div class="burguer" onclick={showMenu()}>
+      <img src="images/menu.png" alt= "Botón Menú" style="width:20px;height:20px;" />
+    </div>
+    <div class="sobremi">
+     <img class= "foto" src="images/luciano.jpg" alt="Foto de Luciano Tognoli" />
+     <h1>LUCIANO TOGNOLI</h1>
+     <h3>Front End Developer</h3>
+      <div>
+        <p>Estoy en constante aprendizaje y buscando desafíos. Me gusta encontrar soluciones.</p>
+        <p>Nací el 15 de noviembre de 1989 y resido en Nogoyá, Entre Ríos, Argentina.</p>  
+      </div>
+    </div>
+  </section>
+  <section id="formacion"> 
+    <div>
+      <h2>
+        Formación
+      </h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>
+            Argentina Programa 4.0
+          </h3>
+            <p>#Séprogramar <br>
+              Plataforma Mumuki <br>
+              Contenido: Gobstones, Javascript, Ruby. </p>
+              <br>
+              <p>Primeros pasos del Desarrollo Front End <br>
+              Plataforma Ticmas <br>
+              Contenido: Html, CSS, Javascript, Git, Github.</p>
+          </div>
+          <div class="grid-item">
+            <h3>
+              ISET 18
+            </h3>
+              Técnico Superior en Fotografía <br>
+              Reg. N° 1429814 <br>
+              Especialización: <br>
+              Digitalización y Medios de Comunicación. <br>
+              <br>
+              Software: <br>
+              Adobe Photoshop, Lightroom.
+          </div>
+          <div class="grid-item">
+            <h3> Codearock </h3>
+              Git y Github
+          </div>
+          <div class="grid-item">
+            <h3> Idiomas: </h3>
+            Inglés y portugués, nivel oral.
+         </div>
+      </div>
+    </div>
+  </section>
+  <section id="experiencia">
+    <h2>
+      Experiencia
+    </h2>
+    <div class="container-color">
+      <div>
+        <h3>La Casona de Don Jaime 2</h3>
+        Hostelling International Rosario<br>
+        Encargado, atención al público. <br> 
+        Manejo de personal, caja, proveedores.<br>
+        2010-2020</h4>
+      </div>
+      <div>
+        <h3>Fotografía Freelance</h3>
+        2013 - Actualidad
+      </div>
+      <div>
+        <h3>Desarrollador Freelance</h3>
+        2022 - Actualidad
+      </div>
+    </div> 
+  </section> 
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="container-color">
+      <div>
+        <a target="_blank" href="https://wa.me/543416848176">
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/whatsapp.png" style="width:40px;height:40px;" /> 
+        <h4 class="links">3416848176</h4>  
+        </a>
+      </div>
+      <div>
+        <a target="_blank" href="mailto:luctognoli@gmail.com">
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/gmail.png" style="width:40px;height:40px;" /> 
+        <h4 class="links">luctognoli@gmail.com</h4>
+      </a>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.instagram.com/lucnoli/" >
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/instagram.png" style="width:40px;height:40px;" /> 
+        <h4 class="links">@lucnoli</h4>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>
+    2023 Luciano Tognoli
+  </p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
